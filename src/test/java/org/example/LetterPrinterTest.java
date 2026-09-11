@@ -13,4 +13,12 @@ class LetterPrinterTest {
         assertEquals("a", letter);
     }
 
+    @Test
+    void printsOtherLetters (){
+        LetterPrinter letterPrinter = new LetterPrinter();
+        String letter = letterPrinter.getLetter(-1);
+
+        assertEquals("b", letter);
+    }
+
 }
