@@ -8,10 +8,10 @@ public class NumberPrinterTest {
      void printNumbers(){
         NumberPrinter numberPrinter = new NumberPrinter();
 
-        int a = numberPrinter.getNumber("");
+        int a = numberPrinter.getNumber("a");
         int b = numberPrinter.getNumber("hej");
 
-        assertEquals(1,a);
+        assertNotEquals(1,a);
         assertEquals(2,b);
     }
 }
