@@ -14,4 +14,15 @@ public class NumberPrinterTest {
         assertNotEquals(1,a);
         assertEquals(2,b);
     }
+
+    @Test
+    void printOtherNumbers(){
+        NumberPrinter numberPrinter = new NumberPrinter();
+
+        int a = numberPrinter.getNumber("hej");
+        int b = numberPrinter.getNumber("");
+
+        assertEquals(1,a);
+        assertEquals(2,b);
+    }
 }
